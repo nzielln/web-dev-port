@@ -55,25 +55,41 @@ nav .nav-items ul {
   list-style-type: none;
 }
 nav .nav-items ul li a {
+  letter-spacing: 1px;
   margin: 0px 20px;
   color: #282828;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
+}
+nav .nav-items ul li a:hover {
+  color: #FF585A;
+}
+nav .nav-items ul #line {
+  color: #FF585A;
 }
 
 .intro {
-  height: 600px;
+  height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .intro .text {
-  margin: 100px 0px;
+  margin: 300px 0px;
 }
 .intro .arrow {
   margin-top: 70px;
+}
+.intro .arrow span {
+  font-size: 28px;
+  color: #FF585A;
+  animation: arrow 1.5s linear infinite normal;
+  animation-play-state: paused;
+}
+.intro .arrow span:hover {
+  animation-play-state: running;
 }
 .intro h2 {
   text-align: center;
@@ -112,16 +128,20 @@ nav .nav-items ul li a {
 .title {
   display: flex;
   align-items: center;
-  height: 250px;
+  height: 280px;
 }
 
 .title h3 {
+  letter-spacing: 1px;
   color: #FF585A;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
+.links {
+  margin-top: 40px;
+}
 .links a {
   text-decoration: none;
   margin: 0px 15px;
@@ -152,7 +172,6 @@ nav .nav-items ul li a {
 .photo img {
   width: 100%;
   transform: scale(1.5) translate(0px, 50px);
-  opacity: 0.9;
 }
 
 .intro-content {
@@ -170,6 +189,52 @@ nav .nav-items ul li a {
   font-weight: 300;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.main .image {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.main .image img {
+  width: 100%;
+}
+.main .information {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main .information .description {
+  width: 70%;
+}
+.main .information p {
+  margin-bottom: 40px;
+  color: #282828;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.main .information p #bold {
+  font-weight: 400;
+}
+.main .information h3 {
+  color: #FF585A;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+.main .information a {
+  text-decoration: none;
+}
+
 footer {
   margin-top: 40px;
   height: 300px;
@@ -181,12 +246,18 @@ footer {
 footer .icons {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 footer .icons span {
-  margin: 0px 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-cursor: pointer;
 }
 footer .icons span a {
   text-decoration: none;
+}
+footer .icons i {
+  cursor: pointer;
 }
 footer h4 {
   margin-top: 15px;
@@ -194,6 +265,21 @@ footer h4 {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 300;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
