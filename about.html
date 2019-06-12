@@ -5,6 +5,10 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/11f304f5ee.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,19 +18,37 @@
   </head>
   <body>
     <div class="navbar">
-      <nav>
-        <div class="logo">
-          <h1 id="bottom" >e.n.n</h1>
-          <h1 id="top" >e.n.n</h1>
-        </div>
-        <div class="nav-items">
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html" id="line">About</a></li>
-          </ul>
-        </div>
+    <nav>
+      <a href="index.html">
+      <div class="logo">
+      <h1 id="bottom" >e.n.n</h1>
+      <h1 id="top" >e.n.n</h1>
+      </div>
+      </a>
+      <img class="click icon menu" src="img/menu-button.svg">
+        <!-- <span style="font-size: 20px; color: #282828;">
+          <i class="fas fa-times"></i>
+        </span>-->
+      <div class="nav-items" id="nav">
+        <ul>
+          <li><a href="index.html" id="line">Work</a></li>
+          <li><a href="about.html">About</a></li>
+
+        </ul>
+      </div>
     </nav>
-  </div>
+      </div>
+      <div class="mobile-navbar">
+        <ul>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a id="pink" href="https://www.behance.net/ellah_nzikoba" target="_blank">Portfolio</a></li>
+          <li><a id="pink" href="img/Ellah_Nzikoba_Resume.pdf" target="_blank">Resume</a></li>
+          <li><a id="pink" href="https://www.linkedin.com/in/ellah-nzikoba/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+
+
 <div class="the-bottom">
   <div class="title">
     <h3>About</h3>
