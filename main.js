@@ -4,7 +4,6 @@ const $width = $(window).width();
 let $icon = $('.click');
 
 let $mobNav = $('.mobile-navbar');
-$mobNav.hide()
 
 
 
