@@ -19,35 +19,36 @@
     />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
 
     <title>Ellah Nzikoba</title>
   </head>
   <body>
+    <!-- navbar -->
     <div class="navbar">
       <nav>
-        <a href="index.html">
+        <a href="../index.html">
           <div class="logo">
             <h1 id="bottom">e.n.n</h1>
             <h1 id="top">e.n.n</h1>
           </div>
         </a>
-        <img class="click icon menu" src="img/menu-button.svg" />
+        <img class="click icon menu" src="../img/menu-button.svg" />
         <!-- <span style="font-size: 20px; color: #282828;">
           <i class="fas fa-times"></i>
         </span>-->
         <div class="nav-items" id="nav">
           <ul>
-            <li><a href="index.html" id="line">Work</a></li>
-            <li><a href="about/about.html">About</a></li>
+            <li><a href="../index.html" id="line">Work</a></li>
+            <li><a href="../about/about.html">About</a></li>
           </ul>
         </div>
       </nav>
     </div>
-    <div class="mobile-navbar" style="display: none;">
+    <div class="mobile-navbar">
       <ul>
-        <li><a href="index.html">Work</a></li>
-        <li><a href="about/about.html">About</a></li>
+        <li><a href="../index.html">Work</a></li>
+        <li><a href="../about/about.html">About</a></li>
         <li>
           <a
             id="pink"
@@ -57,7 +58,7 @@
           >
         </li>
         <li>
-          <a id="pink" href="img/Ellah_Nzikoba_Resume.pdf" target="_blank"
+          <a id="pink" href="../img/Ellah_Nzikoba_Resume.pdf" target="_blank"
             >Resume</a
           >
         </li>
@@ -72,49 +73,30 @@
       </ul>
     </div>
 
+    <!-- main  -->
     <div class="the-bottom">
-      <div class="intro">
-        <div class="text">
-          <h2 id="pink">Hello. My name is Ellah.</h2>
-          <h2>
-            I'm an aspiring web designer and developer with a background in
-            research <br />
-            <br />
-            I'm experienced in html/css, javascript/jquery, sass, and react
-          </h2>
+      <div class="main">
+        <div class="title">
+          <h3>Illustration Portfolio</h3>
         </div>
-        <div class="arrow">
-          <span>
-            <i class="fas fa-chevron-down"></i>
-          </span>
+        <div class="image">
+          <img id="port" src="../img/portfolio.png" />
         </div>
-      </div>
-      <div class="bottom">
-        <div class="project-cards">
-          <a href="essential/essential.html">
-            <div class="project" id="projects-1">
-              <img src="img/essentials.png" />
-            </div>
-          </a>
-          <a href="immerse/immerse.html">
-            <div class="project" id="projects-2">
-              <img src="img/Group@10x.png" />
-            </div>
-          </a>
-          <a href="simple/simple.html">
-            <div class="project" id="projects-3">
-              <img src="img/simple..png" />
-            </div>
-          </a>
-          <a href="portfolio/portfolio.html">
-            <div class="project" id="projects-4">
-              <img src="img/portfolio.png" />
-            </div>
-          </a>
+        <div class="information">
+          <div class="description">
+            <p>
+              <span id="bold">Language/Framework:</span> HTML, CSS, Javascript
+              <br />
+              <span id="bold">Tools Used:</span> Adobe XD, Visual Studio Code
+              <br />
+            </p>
+          </div>
+          <a href="https://nzielln.github.io/portfolio/"><h3>View Site</h3></a>
         </div>
       </div>
     </div>
 
+    <!-- footer -->
     <footer>
       <div class="icons">
         <a href="https://www.linkedin.com/in/ellah-nzikoba/" target="_blank">
@@ -140,6 +122,7 @@
       </div>
       <h4>@2019 - Ellah Nzikoba</h4>
     </footer>
-    <script src="scripts/main.js" type="text/javascript"></script>
+
+    <script src="../scripts/main.js" type="text/javascript"></script>
   </body>
 </html>
